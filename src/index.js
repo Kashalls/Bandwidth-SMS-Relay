@@ -19,7 +19,7 @@ app.get('/', (req, res) => res.redirect('https://www.youtube.com/watch?v=dQw4w9W
 
 app.post('/sendgrid/incoming', async (req, res) => {
 	console.log(req);
-	return res.status(204);
+	return res.status(204).send();
 });
 
 app.post('/bandwidth/incoming', async (req, res) => {
@@ -34,7 +34,7 @@ app.post('/bandwidth/incoming', async (req, res) => {
 	Sendgrid.send(msg)
 		.then(() => console.log('Email sent'))
 		.catch((error) => console.error(error));
-	return res.status(204);
+	return res.status(204).send();
 });
 
 app.listen(3000, () => console.log('Server is listening on 3000'));
