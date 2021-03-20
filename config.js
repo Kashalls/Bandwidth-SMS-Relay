@@ -1,0 +1,9 @@
+module.exports = {
+    port: 3000,
+    bandwidth: {
+        accountId: '',
+        token: '',
+        key: '',
+        url:
+    }
+}

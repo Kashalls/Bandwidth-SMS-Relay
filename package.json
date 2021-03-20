@@ -1,0 +1,27 @@
+{
+  "name": "bandwidth-sms-relay",
+  "version": "1.0.0",
+  "description": "A bandwidth sms relay that allows sms to email and vise versa.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Bandwidth",
+    "SMS",
+    "Relay",
+    "Bandwidth.com",
+    "Nodejs",
+    "SMS",
+    "Gateway",
+    "Email",
+    "Relay"
+  ],
+  "author": "Kashall (Jordan Jones)",
+  "license": "MIT",
+  "dependencies": {
+    "@bandwidth/messaging": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
